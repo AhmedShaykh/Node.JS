@@ -1,3 +1,3 @@
-const data = require("./importdata");
+const data = require("./importData");
 
 console.log("Learning Node.JS", data);
