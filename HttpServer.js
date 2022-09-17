@@ -1,5 +1,15 @@
-const http = require("./node:event");
+import http from 'node:http';
 
-const port = process.env.port;
+const port = process.env.PORT || 4000;
 
-const server = http.createServer((req, res) => {});
+const server = http.createServer((req, res) => {
+    console.log(req.url);
+
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
+    res.end('<h1>Learning Backend With Node.JS</h1>');
+});
+
+server.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
+});
