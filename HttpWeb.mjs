@@ -10,6 +10,10 @@ const server = http.createServer((req, res) => {
         res.statusCode = 200;
         res.end('<h1>Learning Backend With Node.JS</h1>');
     }
+    else if (req.url == '/index.html') {
+        res.statusCode = 200;
+        res.end('<h1>About Page</h1>');
+    }
     else if (req.url == '/about') {
         res.statusCode = 200;
         res.end('<h1>About Page</h1>');
