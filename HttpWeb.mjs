@@ -5,6 +5,7 @@ const port = process.env.PORT || 4000;
 
 const server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'text/html');
+
     console.log(req.url);
 
     if (req.url == '/') {
