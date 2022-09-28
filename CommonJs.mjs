@@ -1,3 +1,3 @@
 export function CommonJS() {
-    console.log('Common.JS Module');
+    console.log('Common.JS Module!');
 }

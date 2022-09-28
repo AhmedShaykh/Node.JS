@@ -8,7 +8,7 @@ myEmitter.on('Its late Night!', () => {
     console.log('Go To Sleep!');
     setTimeout(() => {
         console.log('Stop Working Please Go To Sleep Now!');
-    }, 3000);
+    }, 2000);
 });
 
 console.log("The Script Is Running!");

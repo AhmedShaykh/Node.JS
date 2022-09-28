@@ -8,16 +8,16 @@ const server = http.createServer((req, res) => {
 
     console.log(req.url);
 
-    if (req.url == '/') {
+    if (req.url === '/') {
         res.statusCode = 200;
         const data = fs.readFileSync("index.html");
-        res.end(data.toString());
+        res.end(data);
     }
-    else if (req.url == '/index') {
+    else if (req.url === '/index') {
         res.statusCode = 200;
-        res.end('<h1>Learning Backend With Node.JS</h1>');
+        res.end('<h1>Learning Backend With Node.JS...!</h1>');
     }
-    else if (req.url == '/about') {
+    else if (req.url === '/about') {
         res.statusCode = 200;
         res.end('<h1>About Page</h1>');
     }
