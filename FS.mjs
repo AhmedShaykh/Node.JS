@@ -15,4 +15,4 @@ const write = fs.writeFileSync('File.txt', "Learning Back-End With Node.JS", () 
 const read = fs.readFileSync('File.txt');
 console.log(read.toString());
 
-console.log("Finish Reading File");
+console.log("Finish Reading File!");

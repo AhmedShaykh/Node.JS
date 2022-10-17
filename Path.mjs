@@ -1,4 +1,4 @@
-const path = require('node:path');
+import * as path from "path";
 
 const a = path.basename('C:\\temp\\myfile.html');
 console.log(a);
@@ -12,5 +12,11 @@ console.log(d);
 const e = path.extname('app.tsx');
 console.log(e);
 
-const f = path.extname(__filename);
-console.log(__filename, f);
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+console.log(__dirname);
+
+const __filename = (import.meta.url);
+console.log(__filename);
+
+const filename = path.extname(import.meta.url);
+console.log(filename);
