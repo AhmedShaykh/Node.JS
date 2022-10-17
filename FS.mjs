@@ -1,4 +1,4 @@
-const fs = require('node:fs');
+import fs from 'fs';
 
 fs.writeFile('File.txt', 'Learning Back-End With Node.JS!', () => {
     console.log("Written to the File");
