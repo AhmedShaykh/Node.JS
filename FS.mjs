@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-fs.writeFile('File.txt', 'Learning Back-End With Node.JS!', () => {
+fs.writeFile('File.txt', 'Learning Back-End With Node & Express.JS!', () => {
     console.log("Written to the File");
 });
 
@@ -8,8 +8,8 @@ fs.readFile('File.txt', 'utf8', (err, data) => {
     console.log(err, data);
 });
 
-const write = fs.writeFileSync('File.txt', "Learning Back-End With Node.JS", () => {
-    console.log(write)
+const write = fs.writeFileSync('File.txt', "Learning Back-End With Node.JS!", () => {
+    console.log(write);
 });
 
 const read = fs.readFileSync('File.txt');

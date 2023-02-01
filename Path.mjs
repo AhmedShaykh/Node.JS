@@ -1,6 +1,6 @@
 import * as path from "path";
 
-const a = path.basename('C:\\temp\\myfile.html');
+const a = path.basename('C:\\temp\\myfile.ts');
 console.log(a);
 
 const b = path.basename('/Desktop/Full-Stack/Node.JS/index.js');

@@ -2,7 +2,7 @@ import { data } from "./ImportData.mjs";
 
 var obj = {
     name: "Node.JS",
-    version: 16,
+    version: 18,
     frameWork: true,
 }
 

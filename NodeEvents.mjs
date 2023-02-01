@@ -12,5 +12,5 @@ myEmitter.on('Its late Night!', () => {
 });
 
 console.log("The Script Is Running!");
-myEmitter.emit('Its late Night!');
+myEmitter.emit("Its late Night!");
 console.log("The Script Is Still Running!");
